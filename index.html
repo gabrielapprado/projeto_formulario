@@ -6,7 +6,7 @@
     <title>Projeto formulário</title>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
+    <form id="formulario" action="" method="">
         <label for="nomeAnimal">Digite o nome do animal:</label>
         <input type="text" name="nomeAnimal" id="nomeAnimal" placeholder="Informe nome do animal..." size="20" maxlength="20" required><br><br>
         
@@ -39,12 +39,12 @@
         <input type="range" name="temperamento" id="temperamento" min=0 max=100 step=10><br><br>
 
         <label for="porte">Informe o porte do animal:</label><br>
-        <input type="radio" name="pequeno" id="pequeno" checked><label for="pequeno">Pequeno</label><br>
+        <input type="radio" name="pequeno" id="pequeno"><label for="pequeno">Pequeno</label><br>
         <input type="radio" name="medio" id="medio"><label for="medio">Médio</label><br>
         <input type="radio" name="grande" id="grande"><label for="grande">Grande</label><br><br>
 
         <label for="servico">Informe o serviço:</label><br>
-        <input type="checkbox" name="banho" id="banho" checked><label for="banho">Banho</label><br>
+        <input type="checkbox" name="banho" id="banho"><label for="banho">Banho</label><br>
         <input type="checkbox" name="tosasimples" id="tosasimples"><label for="tosasimples">Tosa Simples</label><br>
         <input type="checkbox" name="tosahigienica" id="tosahigienica"><label for="tosahigienica">Tosa Higiênica</label><br>
         <input type="checkbox" name="vacinacao" id="vacinacao"><label for="vacinacao">Vacinação</label><br><br>
@@ -55,6 +55,9 @@
         </textarea><br>
 
         <button value="submit">Enviar formulário</button>
+        <button value="Vizualizar" onclick="visualizar()">Vizualizar</button>
+        <button value="Limpar" onclick="Limpar()">Limpar formulário</button>
+        <script src="script.js"></script>
     </form>
 </body>
 </html>
