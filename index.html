@@ -8,16 +8,16 @@
 <body>
     <form action="cadastro.php" method="post">
         <label for="nomeAnimal">Digite o nome do animal:</label>
-        <input type="text" name="nomeAnimal" id="nomeAnimal" placeholder="Informe nome do animal..." size="20" maxlength="20" required><br>
+        <input type="text" name="nomeAnimal" id="nomeAnimal" placeholder="Informe nome do animal..." size="20" maxlength="20" required><br><br>
         
         <label for="telefone">Telefone de contato:</label>
-        <input type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required placeholder="(99) 99999-9999"><br>
+        <input type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" required placeholder="(99) 99999-9999"><br><br>
         
         <label for="datanasc">Informe a data de nascimento: </label>
-        <input type="date" name="datanasc" id="datanasc" max="2026-04-14"><br>
+        <input type="date" name="datanasc" id="datanasc" max="2026-04-14"><br><br>
 
         <label for="carteiravacina">Insira a carteira de vacinação:</label>
-        <input type="file" name="carteiravacina" id="carteiravacina"><br>
+        <input type="file" name="carteiravacina" id="carteiravacina"><br><br>
         
         <label for="racaAnimal">Informe a raça do animal:</label>
         <select name="racaAnimal" id="racaAnimal">
@@ -30,24 +30,24 @@
             <optgroup label="Silvestre">
                 <option value="cobra">Cobra</option>
             </optgroup>
-        </select><br>
+        </select><br><br>
         
         <label for="corAnimal">Insira a cor do animal:</label>
-        <input type="color" name="corAnimal" id="corAnimal"><br>
+        <input type="color" name="corAnimal" id="corAnimal"><br><br>
 
         <label for="temperamento">Temperamento:</label>
-        <input type="range" name="temperamento" id="temperamento" min=0 max=100 step=10><br>
+        <input type="range" name="temperamento" id="temperamento" min=0 max=100 step=10><br><br>
 
         <label for="porte">Informe o porte do animal:</label><br>
         <input type="radio" name="pequeno" id="pequeno" checked><label for="pequeno">Pequeno</label><br>
         <input type="radio" name="medio" id="medio"><label for="medio">Médio</label><br>
-        <input type="radio" name="grande" id="grande"><label for="grande">Grande</label><br>
+        <input type="radio" name="grande" id="grande"><label for="grande">Grande</label><br><br>
 
         <label for="servico">Informe o serviço:</label><br>
         <input type="checkbox" name="banho" id="banho" checked><label for="banho">Banho</label><br>
         <input type="checkbox" name="tosasimples" id="tosasimples"><label for="tosasimples">Tosa Simples</label><br>
         <input type="checkbox" name="tosahigienica" id="tosahigienica"><label for="tosahigienica">Tosa Higiênica</label><br>
-        <input type="checkbox" name="vacinacao" id="vacinacao"><label for="vacinacao">Vacinação</label><br>
+        <input type="checkbox" name="vacinacao" id="vacinacao"><label for="vacinacao">Vacinação</label><br><br>
 
         <label for="observacao">Observações do animal:</label><br>
         <textarea name="observacao" id="observacao" cols="50" rows="10">
